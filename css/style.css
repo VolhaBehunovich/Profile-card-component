@@ -18,27 +18,25 @@ body {
 }
 
 main {
+    position: relative;
     width: 100vw;
-    height: calc(100vh - 16px);
+    height: 100vh;
     min-height: 470px;
-    /* background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top left, bottom right; */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .top {
     position: absolute;
-    bottom: 25%;
-    right: 55%;
+    bottom: 35%;
+    right: 50%;
 }
 
 .bottom {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
 }
 
@@ -79,7 +77,7 @@ main {
     .container {
         width: 90%;
         min-width: 250px;
-        height: calc(370px - 11%);
+        height: 310px;
     }
 
     .cyan {
@@ -141,7 +139,7 @@ hr {
     /* Цвет линии для браузера Firefox и Opera */
     height: 2px;
     /* Толщина линии */
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 .proud {
@@ -164,8 +162,11 @@ hr {
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
     font-size: 11px;
     text-align: center;
+    color: #ffffff;
 }
 
 @media (max-width:359px) {
@@ -175,7 +176,7 @@ hr {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: #ffffff;
 }
 
 .attribution a:hover {
